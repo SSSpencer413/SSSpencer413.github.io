@@ -1,4 +1,7 @@
 # Welcome!
 
+There's nothing really here right now!
 
-theres nothing here.
+
+## Check out my other projects!
+- [Turtlebot](https://ssspencer413.github.io/turtlebot)
