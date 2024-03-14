@@ -1,7 +1,7 @@
 # Welcome!
 
-There's nothing really here right now!
+I'm a Computer Science student looking to learn new things!
 
 
-## Check out my other projects!
+## Check out some of my projects!
 - [Turtlebot](https://ssspencer413.github.io/turtlebot)
