@@ -1,0 +1,8 @@
+.pageclip-form__success {
+    background-color: var(--bg-section);
+}
+
+.pageclip-form__success__message {
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+}
