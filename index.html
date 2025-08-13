@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSSpencer413</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>SSSpencer413</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div id="hero-content">
+      <img src="https://img.spencers.work/u/ProfilePicture.gif" alt="Profile Picture">
+      <h2>Hi, I'm Spencer</h2>
+      <p>I make games, apps, and tools through code!</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>I'm a developer who's been making things for over 10 years. I primarily use Lua and JavaScript, however I have taught myself many other programming languages!</p>
+    
+  </section>
+
+  <section id="projects">
+    <a href="https://ssspencer413.github.io/turtlebot/" target="_blank" class="project-card">
+      <img src="https://img.spencers.work/u/9a6a77ee-a321-42b4-a1ba-63d5ed2890d4.png" alt="TurtleBot">
+      <div class="project-info">
+        <h4>TurtleBot</h4>
+        <p>A fun Discord and Guilded bot all about turtles! Users can request images, jokes, and facts about turtles! Built with NodeJS.</p>
+      </div>
+    </a>
+    <a href="https://www.roblox.com/games/11229338319" target="_blank" class="project-card">
+      <img src="https://img.spencers.work/u/donationgame.webp" alt="The Donation Game">
+      <div class="project-info">
+        <h4>The Donation Game</h4>
+        <p>A Roblox donation game where players can host their own lobbies and have players compete to win donations! Officially partnered with KreekCraft!</p>
+      </div>
+    </a>
+    <a href="https://www.roblox.com/games/5830888428" target="_blank" class="project-card">
+      <img src="https://img.spencers.work/u/firesimulationthumbnail.webp" alt="FireSimulation">
+      <div class="project-info">
+        <h4>Fire Simulation</h4>
+        <p>A realistic Roblox firefighting experience where players must choose a squad and work together to keep the town safe!</p>
+      </div>
+    </a>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <form action="https://send.pageclip.co/zPRGWl5BI1JJ73C5XxQ6miVxgjRyB2T5" class="pageclip-form" method="post">
+      <input id="name" type="text" placeholder="Your Name" required>
+      <input id="email" type="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="pageclip-form__submit">
+        <span>Send</span>
+      </button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 SSSpencer413. All rights reserved.
+  </footer>
+
+  <script src="./particles.js"></script>
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+</body>
+
+</html>
