@@ -63,7 +63,11 @@ function connectParticles() {
     }
 }
 
+let oldWidth = canvas.offsetWidth;
 window.addEventListener('resize', function () {
+    if (oldWidth == canvas.offsetWidth) return;
+    oldWidth = canvas.offsetWidth;
+    
     canvas.width = canvas.offsetWidth;
     canvas.height = canvas.offsetHeight;
     init();
