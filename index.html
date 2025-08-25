@@ -26,7 +26,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
   <link href="./styles.css" rel="stylesheet">
-  <link href="./pageclip-custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -82,11 +81,11 @@
 
   <section id="contact">
     <h3>Contact Me</h3>
-    <form action="https://send.pageclip.co/zPRGWl5BI1JJ73C5XxQ6miVxgjRyB2T5/contact-form" class="pageclip-form" method="post">
-      <input id="name" name="name" type="text" placeholder="Your Name" required>
-      <input id="email" name="email" type="email" placeholder="Your Email" required>
-      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="pageclip-form__submit">
+    <form action="https://whforms.spencers.work/form/contact/58092fba-0d51-45e1-9c18-b4d255320ec2/" method="post" class="whform">
+      <input name="name" type="text" placeholder="Your Name" autocomplete="name" required>
+      <input name="email" type="email" placeholder="Your Email" autocomplete="email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">
         <span>Send Message</span>
       </button>
     </form>
@@ -97,7 +96,26 @@
   </footer>
 
   <script src="./particles.js"></script>
-  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+  <script src="https://whforms.spencers.work/public/submission-script"></script>
+  <script>
+    if (whformSettings === undefined) return;
+    
+    whformSettings.loadingTemplate = '';
+    whformSettings.callback = function(formElement, status) {
+      let button = formElement.querySelector("button");
+      if (!button) return;
+
+      switch(status) {
+        case "pending":
+          button.innerHTML = '<span class="spinner"></span>'
+          break;
+        default:
+          button.innerHTML = "Send Message";
+      }
+    }
+  </script>
+    
+  
 </body>
 
 </html>
