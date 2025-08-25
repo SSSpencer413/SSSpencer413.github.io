@@ -22,10 +22,16 @@
   <meta property="twitter:title" content="SSSpencer413" />
   <meta property="twitter:description" content="Welcome to SSSpencer413's official homepage!" />
 
+  <!-- Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"/>
+  <link rel="preload" as="style" href="./styles.css"/>
+  <link rel="preload" as="script" href="./particles.js"/>
+  <link rel="preload" as="script" href="https://whforms.spencers.work/public/submission-script/"/>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-  <link href="./styles.css" rel="stylesheet">
+  <!-- Style sheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="./styles.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -98,7 +104,7 @@
   <script src="./particles.js"></script>
   <script src="https://whforms.spencers.work/public/submission-script"></script>
   <script>
-    if (whformSettings === undefined) return;
+    whformSettings = whformSettings || {};
     
     whformSettings.loadingTemplate = '';
     whformSettings.callback = function(formElement, status) {
